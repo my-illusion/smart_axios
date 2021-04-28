@@ -7,17 +7,12 @@ import { name } from "./package.json";
 
 export default [
   {
-    input: "build/index.js",
+    input: "src/index.js",
     output: [
       {
         exports: "named",
-        file: `lib/${name}.cjs.js`,
-        format: "cjs",
-      },
-      {
-        exports: "named",
-        file: `es/${name}.es.js`,
-        format: "es",
+        file: `esm/${name}.esm.js`,
+        format: "esm",
       },
     ],
     plugins: [

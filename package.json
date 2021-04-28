@@ -4,7 +4,7 @@
   "description": "framework for library  develop",
   "main": "index.js",
   "scripts": {
-    "build": "tsc && rollup --config",
+    "build": "rollup --config",
     "test": "jest --config ./config/jest/config.json --no-cache"
   },
   "author": "songbb",
@@ -26,6 +26,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.7",
+    "http": "^0.0.1-security",
     "jest": "^26.1.0",
     "prettier": "^2.0.5",
     "rollup": "^2.21.0",
@@ -38,9 +39,13 @@
     "typescript": "^3.9.6"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "core-js": "3.0.0"
   },
   "resolutions": {
     "babel-core": "7.0.0-bridge.0"
+  },
+  "peerDependencies": {
+    "axios": "^0.21.1"
   }
 }
