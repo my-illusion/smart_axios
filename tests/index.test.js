@@ -12,6 +12,22 @@ server = http.createServer(function (req, res) {
   axios.get('http://localhost:4444/').then(function (res) {
     success = true;
     console.log(111, res.data)
-    server.close()
+    
+  })
+
+  axios.get('http://localhost:4444/').then(function (res) {
+    success = true;
+    console.log(222, res.data)
+  })
+
+  axios.get('http://localhost:4444/').then(function (res) {
+    success = true;
+    console.log(333, res.data)
+  })
+
+  axios.get('http://localhost:4444/').then(function (res) {
+    success = true;
+    console.log(444, res.data)
   })
 });
+
